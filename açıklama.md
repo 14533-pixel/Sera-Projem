@@ -1,5 +1,4 @@
 # Sera-Projem
--------------1---------------------------------------
 1-ilk olarak taslağımı çizip modelimin iskeletini oluşturdum.
 2-Oluşturduğum iskeletin üzerine plastik camlarımı silikon yardımıyla yapıştırdım.
 3-Çatı kısmının iç tarafına 2 tane servo motor yerleştirdim.
