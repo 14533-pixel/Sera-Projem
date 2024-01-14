@@ -16,6 +16,7 @@ Servo myservo2;
 int waterlevel=A1;
 int water;
 
+int role=9;
 
 void setup()
 {
@@ -26,6 +27,8 @@ void setup()
   myservo.attach(5);
   myservo2.attach(6);
   pinMode(waterlevel,INPUT);
+  pinMode(role,OUTPUT);
+  digitalWrite(role,LOW);
 }
 
 
@@ -68,12 +71,14 @@ void loop()
     lcd.setCursor(1,1);
     lcd.print("toprakta su yok");
     delay(2000);
+    digitalWrite(role,HIGH);
   }
   else
   {
     lcd.setCursor(1,1);
     lcd.print("toprakta su var");
     delay(2000);
+    digitalWrite(role,LOW);
   }
   lcd.setCursor(1,1);
   lcd.print("                ");
